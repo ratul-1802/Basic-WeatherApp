@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    color: rgb(17, 17, 17);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(17, 17, 56);
+    background: url('assets/background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    height: min-content;
+    width: 21vw;
+    min-width: 300px;
+    background-color: rgb(71, 109, 119);
+    border-radius: 7px;
+    padding: 28px;
+}
+.search{
+    height: min-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input_box{
+    width: 85%;
+    border: 1px solid;
+    color: black;
+    border-radius: 4px;
+    font-size: larger;
+    background-color: rgb(247, 246, 242);
+    padding: 10px;
+}
+.input_box::placeholder{
+    color: black;
+}
+button{
+    width: 46px;
+    height: 46px;
+    background-color: rgb(94, 130, 139);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover{
+    color: aliceblue;
+    background-color: rgb(43, 41, 41);
+}
+
+.weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none; /* keep it hidden until a location is entered */
+    /* margin: 15px; */
+}
+
+.weather img{
+    width: 50%;
+    margin-top: 20px;
+}
+
+.weather_details{
+    margin: 15px;
+    text-align: center;
+}
+.weather .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.weather .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+.details{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.weather_description{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.humidity, .wind_speed{
+    display: flex;
+    align-items: center;
+}
+.weather_description i{
+    font-size: xx-large;
+}
+
+.description{
+    font-size: larger;
+    font-weight: bolder;
+    margin: 15px;
+}
+
+.error404{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.error404 h1{
+    color: black;
+    margin: 15px;
+}
+.error404 img{
+    width: 85%;
+}
+.location{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#place1{
+    margin-top: 20px;
+}
